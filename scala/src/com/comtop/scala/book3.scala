@@ -81,3 +81,4 @@ val e4 = Array[Int](2, 44, 6, -4, 3, -1, 0, 23)
 def method4(arr: Array[Int]) = {
 //  for()
 }
+println(e4.sum)

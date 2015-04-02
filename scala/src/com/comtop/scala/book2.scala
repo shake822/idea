@@ -39,6 +39,7 @@ def defaultParam(body: String, left: String = "[", right: String = "]"): String 
 
 println(defaultParam("hello"))
 println(defaultParam("hello", "xx", "yy"))
+println(defaultParam("hello",right = "xxxxx"))
 
 def sum(args: Int*): Int = {
   var res = 0
@@ -70,3 +71,14 @@ for(i <- 0 to 10 reverse){
   print(i+" ")
 }
 
+println("字母的uniconde")
+
+def charCode(str:String):Long = {
+  if(str ==""){
+    1
+  }else{
+    str.head.toLong*charCode(str.tail)
+  }
+}
+
+println(charCode("Hello"))
