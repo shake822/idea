@@ -8,5 +8,5 @@ list << "33333"
 list << "44444"
 for(String str :list){
     println str
-//    list.remove(str)
+    //list.remove(str)
 }
