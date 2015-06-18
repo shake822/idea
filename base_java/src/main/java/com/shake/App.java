@@ -5,6 +5,10 @@ package com.shake;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        for(String str:"Hello.World!".split("[.]")){
+            System.out.println(str);
+        }
+
     }
 }
